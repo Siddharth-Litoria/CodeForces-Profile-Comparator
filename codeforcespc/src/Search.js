@@ -60,8 +60,8 @@ class Search extends React.Component {
     }
     handleData() {
         //console.log("here")
-        const promise1 = axios.get('http://codeforces.com/api/user.info?handles=' + this.state.firstUsername);
-        const promise2 = axios.get('http://codeforces.com/api/user.info?handles=' + this.state.secondUsername);
+        const promise1 = axios.get('https://codeforces.com/api/user.info?handles=' + this.state.firstUsername);
+        const promise2 = axios.get('https://codeforces.com/api/user.info?handles=' + this.state.secondUsername);
         promise1.then(response => {
             //console.log(response.data)
             this.setState({
