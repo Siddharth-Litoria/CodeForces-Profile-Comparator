@@ -1,0 +1,67 @@
+
+#cover{
+  background-size: cover;
+  background-color:#0A0A0A;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#cover-caption {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+form:before {
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #DBE4EE;
+  z-index: -1;
+  border-radius: 10px;
+}
+.spantext{
+  color: #BA1F33;
+}
+
+#info {
+  background-color:white;
+  padding: 2rem 0;
+}
+
+#row1 {
+  width: 100%;
+  max-width: 45rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color:white;
+}
+
+.card {
+  display: inline-block;
+  width: 45%;
+  padding: 4rem 1rem 7rem 1rem;
+  background-color: #D8EBFD;
+  position: relative;
+}
+.card:nth-of-type(1) {
+  margin-right: 9%;
+}
+.card h5 {
+  color: #020402;
+  margin-bottom: 1rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.card p {
+  color: #020402;
+  font-size: 1.1rem;
+  line-height: 140%;
+}
