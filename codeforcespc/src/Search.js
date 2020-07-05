@@ -72,7 +72,7 @@ class Search extends React.Component {
         }).catch(error => {
             //console.log(error.response);
             if (error.response) {
-                this.setState({ errorfirst: error.response.data.comment });
+                this.setState({ errorfirst: error.response.data.comment,firstcharacter:{} });
             } else {
                 this.setState({ errorfirst: error.message });
             }
@@ -87,7 +87,7 @@ class Search extends React.Component {
         }).catch(error => {
             //console.log((error.response));
             if (error.response) {
-                this.setState({ errorsecond: error.response.data.comment });
+                this.setState({ errorsecond: error.response.data.comment,secondcharacter:{}});
             } else {
                 this.setState({ errorsecond: error.message });
             }
@@ -99,7 +99,7 @@ class Search extends React.Component {
     }
     render() {
         //console.log(this.state)
-        if (this.state.loadedfirstcharacter && this.state.loadedsecondcharacter) {
+        if (this.state.loaded && this.state.loadedfirstcharacter && this.state.loadedsecondcharacter) {
             return <Redirect to={{ pathname: '/Show', state: { data: this.state.firstcharacter, data1: this.state.secondcharacter } }} />
         }
         return (

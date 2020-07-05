@@ -11,7 +11,7 @@ function Navbar(params) {
     <a class="nav-link" href="https://www.linkedin.com/in/siddharth-litoria-969450129/"><img src={linkedin} style={{width:"30px"}}></img></a>
     </li>
     <li class="nav-item">
-    <a class="nav-link" href="https://www.linkedin.com/in/siddharth-litoria-969450129/"><img src={GitHub} style={{width:"30px"}}></img></a>
+    <a class="nav-link" href="https://github.com/Siddharth-Litoria/CodeForces-Profile-Comparator"><img src={GitHub} style={{width:"30px"}}></img></a>
     </li>
     </ul>
     </nav>
